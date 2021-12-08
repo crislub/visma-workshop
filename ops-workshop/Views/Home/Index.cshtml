@@ -1,8 +1,17 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<ops_workshop.Models.SalesResult>
+@{
+    ViewBag.Title = "Invoices";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <table id="table1">
+        <caption>What ever happens at Raet stays at Raet</caption>
+        <tr><th>Quantity</th><th>Item</th><th>ItemPrice</th></tr>
+        @foreach (var item in Model)
+        {
+            <tr><td>@item.OrderQty</td><td>@item.Name</td><td>@item.ListPrice</td></tr>
+        }
+    </table>
 </div>
