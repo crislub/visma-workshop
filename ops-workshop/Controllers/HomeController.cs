@@ -48,7 +48,7 @@ namespace ops_workshop.Controllers
         SqlDataReader reader = command.ExecuteReader();
         while (reader.Read())
         {
-          salesResults.Add(new SalesResult((int)reader[0], (string)reader[1], (string)reader[2]));
+          salesResults.Add(new SalesResult((short)reader[0], (string)reader[1], (string)reader[2]));
         }
       }
       return salesResults;
