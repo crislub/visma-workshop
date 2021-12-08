@@ -26,11 +26,11 @@ namespace ops_workshop.Controllers
     {
       string sqlConnectionstring = Configuration.GetConnectionString("WorkshopDatabase");
       string sqlcommand = @"SELECT OrderQty,Name,ListPrice
-                    FROM SalesOrderHeader JOIN SalesOrderDetail
-                            ON SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID
-                                            JOIN Product
-                            ON SalesOrderDetail.ProductID=Product.ProductID
-                    WHERE CustomerID=635";
+                    FROM SalesLT.SalesOrderHeader JOIN SalesLT.SalesOrderDetail
+                            ON SalesLT.SalesOrderDetail.SalesOrderID = SalesLT.SalesOrderHeader.SalesOrderID
+                                            JOIN SalesLT.Product
+                            ON SalesLT.SalesOrderDetail.ProductID=SalesLT.Product.ProductID
+                    WHERE CustomerID=30113";
       var salesResult = CreateCommand(sqlcommand, sqlConnectionstring);
       return View(salesResult);
     }
