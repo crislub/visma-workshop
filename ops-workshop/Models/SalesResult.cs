@@ -4,13 +4,13 @@ namespace ops_workshop.Models
 {
     public class SalesResult
     {
-        public SalesResult(int orderqty, string name, string listprice){
+        public SalesResult(short orderqty, string name, decimal listprice){
             this.OrderQty = orderqty;
             this.Name = name;
             this.ListPrice = listprice;
         }
-        public int OrderQty { get; set; }
+        public short OrderQty { get; set; }
         public string Name { get; set; }
-        public string ListPrice { get; set; }
+        public decimal ListPrice { get; set; }
     }
 }
