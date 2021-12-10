@@ -1,8 +1,86 @@
-# visma-raet-ops-teamup-workshop
-Repository for use during the Cloud Ops TeamUp workshop/hackathon session.
+# VISMA Cloud Operations Workshop
+To complete this workshop you need to follow next steps:
+- Connect to github website
+- Create new repository and copy current repository in your personal profile
+- Create app service in Azure
+- Link app service to this repository
 
-# WebApp Deployment
-to be defined
+
+
+## Connect to github website
+
+Join to visma-raet organization pressing the button you have received through mail.
+
+<p align="center">
+    <image src="image/join-visma-raet.png"/>
+</p>
+
+Use you credentials to connect with the organization, in case you don't have it you need to create a new account in www.github.com page.
+
+
+## Create new repository and copy current repository in your personal profile
+
+To copy the repository from visma-raet organization you need to create a new repository in you personal profile. 
+1. In the upper-right corner of any page, use the  drop-down menu, and select New repository.
+
+<p align="center">
+    <image src="image/new-repository.png"/>
+</p>
+
+2. In the Owner drop-down, select the account you wish to create the repository on.
+
+![Repository account](image/repository-account.png)
+
+
+3. Type a name for your repository, and an optional description.
+
+![Repository name](image/create-repository-name.png)>
+
+4. Choose private in a repository visibility.
+
+![Repository visibility](image/create-repository-private.png)
+
+5. Continue with Wesite or Terminal section
+
+### Website
+
+6. At the bottom of the resulting Quick Setup page, under "Import code from an old repository", you have to choose import a project to your new repository and click Import code.
+
+![Repository import](image/import-repository.png)
+
+![Repository copy](image/copy-repository.png)
+
+7. Click Create repository.
+
+
+### Terminal
+
+6. Click Create repository.
+
+7. Open Git Bash.
+
+8. Create a bare clone of the repository.
+
+```
+$ git clone --bare https://github.com/exampleuser/old-repository.git
+```
+
+9. Mirror-push to the new repository.
+```
+$ cd old-repository
+$ git push --mirror https://github.com/exampleuser/new-repository.git
+```
+10. Remove the temporary local repository you created earlier.
+```
+$ cd ..
+$ rm -rf old-repository
+```
+
+
+## Create app service in Azure
+
+## Link app service to this repository
+
 
 # SQLDeployment
 
