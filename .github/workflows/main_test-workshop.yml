@@ -42,6 +42,21 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
+      # Log into Azure
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      # Deploy Bicep file
+      - name: deploy
+        uses: azure/arm-deploy@v1
+        with:
+          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
+          resourceGroupName: ${{ secrets.AZURE_RESOURCEGROUP }}
+          template: ./main.bicep
+          parameters: ADMIN_NAME=${{ secrets.ADMIN_NAME }} ADMIN_PASSWORD=${{ secrets.ADMIN_PASSWORD }}
+          failOnStdErr: false
+    
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
@@ -55,3 +70,8 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1490EF6F276E4FF5B3ACE1E04B0CB100 }}
           package: .
+
+      # Azure logout 
+      - name: logout
+        run: |
+          az logout          
