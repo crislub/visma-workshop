@@ -6,19 +6,21 @@ To complete this workshop you need to follow next steps:
 - Link app service to this repository
 
 ## Prerequisites
-    - Have a github account
-    - Have git installed in your laptop \*
-        - Install git on [MacOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
-        - Install git on [Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
-        - Install git on [Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
-    - Add ssh key to github websit \*
-        - Create new ssh key in your laptop
+- Have a github account
+- Have git installed in your laptop \*
+    - Install git on [MacOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
+    - Install git on [Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
+    -  Install git on [Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
+- Add ssh key to github websit \*
+    - Create new ssh key in your laptop
 ```
 ssh-keyge -t rsa -b 4096 -C "your_email@example.com"
 ```
-        - 
-
-\* Only needed if you are going to use  terminal to work with github website
+    - After ssh key is created you have a public/private key pair. You need to copy content of your-key.pub.
+    - In github web page you need to go to uppper-right corner, click in your profile and then click Settings.
+![Account Settings](image/account-settings.png)
+    - In the user settings sidebar, click SSH and GPG keys.
+\* Only needed if you are going to use  terminal to work with github website.
 
 ## Connect to github website
 
