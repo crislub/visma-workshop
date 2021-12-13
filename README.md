@@ -11,16 +11,8 @@ To complete this workshop you need to follow next steps:
     - Install git on [MacOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
     - Install git on [Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
     -  Install git on [Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
-- Add ssh key to github websit \*
-    - Create new ssh key in your laptop
-```
-ssh-keyge -t rsa -b 4096 -C "your_email@example.com" 
-```
-- 
-    - After ssh key is created you have a public/private key pair. You need to copy content of your-key.pub.
-    - In github web page you need to go to uppper-right corner, click in your profile and then click Settings.
-![Account Settings](image/account-settings.png)
-    - In the user settings sidebar, click SSH and GPG keys.
+- [Add ssh key to github websit](sshgen.md) \*
+
 \* Only needed if you are going to use  terminal to work with github website.
 
 ## Connect to github website
@@ -45,7 +37,9 @@ To copy the repository from visma-raet organization you need to create a new rep
 
 2. In the Owner drop-down, select the account you wish to create the repository on.
 
-![Repository account](image/repository-account.png)
+<p align="center">
+    <image src="image/repository-account.png" width="50%" height="50%"/>
+</p>
 
 
 3. Type a name for your repository, and an optional description.
