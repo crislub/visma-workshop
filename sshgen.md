@@ -1,4 +1,4 @@
-#Add ssh key
+# Add ssh key
 
 1. Create new ssh key in your laptop
 ```
@@ -9,7 +9,9 @@ ssh-keyge -t rsa -b 4096 -C "your_email@example.com"
 
 2.  After ssh key is created you have a public/private key pair. You need to copy content of your-key.pub.
 
-![SSH output](image/ssh-output.png)
+<p align="center">
+    <image src="image/ssh-output.png"/>
+</p>
 
 3. In github web page you need to go to uppper-right corner, click in your profile and then click Settings.
 
