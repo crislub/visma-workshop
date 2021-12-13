@@ -23,39 +23,30 @@ ssh-keyge -t rsa -b 4096 -C "your_email@example.com"
 4. In the user settings sidebar, click SSH and GPG keys.
 
 <p align="center">
-    <image src="image/ssh-output.png" width="50%" height="50%"/>
+    <image src="image/ssh-keys.png" width="50%" height="50%"/>
 </p>
-![SSH key github](image/ssh-keys.png)
 
 5. Click New SSH key.
 
 <p align="center">
-    <image src="image/ssh-output.png" width="50%" height="50%"/>
+    <image src="image/new-ssh.png" width="50%" height="50%"/>
 </p>
-
-![New github key](image/new-ssh.png)
 
  6. In the "Title" field, add a descriptive label for the new key. Paste your key into the "Key" field.
 
 <p align="center">
-    <image src="image/ssh-output.png" width="50%" height="50%"/>
+    <image src="image/ssh-key-add.png" width="50%" height="50%"/>
 </p>
-
-![Add ssh key](image/ssh-key-add.png)
 
 7. Click Add ssh key.
 8. You already have the ssh key. Now you need to go to Configure SSO.
 
 <p align="center">
-    <image src="image/ssh-output.png" width="50%" height="50%"/>
+    <image src="image/ssh-configure-sso.png" width="50%" height="50%"/>
 </p>
-
-![SSO](image/ssh-configure-sso.png)
 
 9. Press "Autorize" botom to allow you work with visma-raet organization.
 
 <p align="center">
-    <image src="image/ssh-output.png" width="50%" height="50%"/>
+    <image src="image/ssh-sso-visma.png" width="50%" height="50%"/>
 </p>
-
-![SSO visma-raet](image/ssh-sso-visma.png)
