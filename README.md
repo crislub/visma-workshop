@@ -99,6 +99,8 @@ $ rm -rf old-repository
 ![Create new Web App](image/deployment-status.png)
 
 4. You already have the app service created
+
+`Note: You can do all the steps trough code`
 ## Link app service to this repository
 
 
