@@ -100,8 +100,13 @@ $ rm -rf old-repository
 
 4. You already have the app service created
 
-![#f03c15](Note: You can do all the steps trough code)
-`![#f03c15](Note: You can do all the steps trough code)`
+``` diff
+    - Note: You can do all the steps trough code
+    + text in green
+    ! text in orange
+    # text in gray
+    @@ text in purple (and bold)@@
+```
 `Note: You can do all the steps trough code`
 ## Link app service to this repository
 
