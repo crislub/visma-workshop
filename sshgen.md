@@ -17,7 +17,7 @@ ssh-keyge -t rsa -b 4096 -C "your_email@example.com"
 3. In github web page you need to go to uppper-right corner, click in your profile and then click Settings.
 
 <p align="center">
-    <image src="image/account-settings.png" width="50%" height="50%"/>
+    <image src="image/account-settings.png" width="20%" height="20%"/>
 </p>
 
 4. In the user settings sidebar, click SSH and GPG keys.
