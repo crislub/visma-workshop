@@ -29,7 +29,7 @@ ssh-keyge -t rsa -b 4096 -C "your_email@example.com"
 5. Click New SSH key.
 
 <p align="center">
-    <image src="image/new-ssh.png" width="50%" height="50%"/>
+    <image src="image/new-ssh.png" width="20%" height="20%"/>
 </p>
 
  6. In the "Title" field, add a descriptive label for the new key. Paste your key into the "Key" field.
