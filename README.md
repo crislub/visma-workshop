@@ -124,7 +124,7 @@ or
 
 5. Create an App Service Plan of the Free tier
 
-```az appservice plan create --name <name> --resource-group <rsg name> --location westeurope --sku F1```
+```az appservice plan create --name <name> --resource-group <rsg name> --location westeurope --sku F1 --is-linux```
 
 6. Create a WebApp part of the create App Service Plan
 
