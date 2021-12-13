@@ -79,6 +79,26 @@ $ rm -rf old-repository
 
 ## Create app service in Azure
 
+1. Login in Azure Portal
+2. Create App Service and fill in all fields
+    - **Subscription:** Raet Experimental
+    - **Resource Group:** Create new resourge group
+    - **Name:** Add a unique name
+    - **Publish:** Code
+    - **Runtime stack:** .NET Core 3.1(LTS)
+    - **Operating System:** Windows
+    - **Region:** West Europe
+    - **App Service Plan**
+        - **Windows Plan:** (Create new plan) Add new name
+        - **Sku and size:** choose one cheep or free (Free F1 could be an option)
+
+![Create new Web App](image/create-web-app.png)
+
+3. Wait until deployment is finish and presss boton "Go to resource"
+
+![Create new Web App](image/deployment-status.png)
+
+4. You already have the app service created
 ## Link app service to this repository
 
 
