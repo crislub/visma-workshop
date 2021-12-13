@@ -14,8 +14,9 @@ To complete this workshop you need to follow next steps:
 - Add ssh key to github websit \*
     - Create new ssh key in your laptop
 ```
-ssh-keyge -t rsa -b 4096 -C "your_email@example.com"
+ssh-keyge -t rsa -b 4096 -C "your_email@example.com" 
 ```
+- 
     - After ssh key is created you have a public/private key pair. You need to copy content of your-key.pub.
     - In github web page you need to go to uppper-right corner, click in your profile and then click Settings.
 ![Account Settings](image/account-settings.png)
