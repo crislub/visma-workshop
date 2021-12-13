@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'workshop-visma'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_93964267CEFC41FD988CC01C19F6B6DC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_21CB1C63F67248BEA784BA9D0203F23D }}
           package: .
