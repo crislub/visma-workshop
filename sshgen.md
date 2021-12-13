@@ -10,7 +10,7 @@ ssh-keyge -t rsa -b 4096 -C "your_email@example.com"
 2.  After ssh key is created you have a public/private key pair. You need to copy content of your-key.pub.
 
 <p align="center">
-    <image src="image/ssh-output.png"/>
+    <image src="image/ssh-output.png" width="80%" height="80%"/>
 </p>
 
 3. In github web page you need to go to uppper-right corner, click in your profile and then click Settings.
