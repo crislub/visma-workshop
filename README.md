@@ -38,7 +38,7 @@ To copy the repository from visma-raet organization you need to create a new rep
 2. In the Owner drop-down, select the account you wish to create the repository on.
 
 <p align="center">
-    <image src="image/repository-account" width="50%" height="50%"/>
+    <image src="image/repository-account.png" width="50%" height="50%"/>
 </p>
 
 
