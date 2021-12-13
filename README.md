@@ -40,7 +40,7 @@ To copy the repository from visma-raet organization you need to create a new rep
 
 ![Repository visibility](image/create-repository-private.png)
 
-5. Continue with Wesite or Terminal section
+5. Continue with Website or Terminal section
 
 ### Website
 
