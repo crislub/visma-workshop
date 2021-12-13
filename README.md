@@ -77,7 +77,7 @@ $ rm -rf old-repository
 ```
 
 
-## Create app service in Azure
+## Create app service in Azure via the Azure Portal
 
 1. Login in Azure Portal
 2. Create App Service and fill in all fields
@@ -103,6 +103,33 @@ $ rm -rf old-repository
 ``` diff
 - Note: You can also do all the steps to create new app service through code. We are not provide the code, you should do it by your own. 
 ```
+
+## Create app service in Azure via Azure CLI
+
+1. Open your PowerShell or Terminal application
+
+2. Login to Azure
+
+```az login```
+
+3. Set the proper subscription to use
+
+```az account set --subscription "Raet Experimental"```
+or
+```az account set --subscription e9a8847c-01a3-4abc-ad63-1411c13ab199```
+
+4. Create a new resource group to place your resources in
+
+```az group create --location westeurope --resource-group <name>```
+
+5. Create an App Service Plan of the Free tier
+
+```az appservice plan create --name <name> --resource-group <rsg name> --location westeurope --sku F1```
+
+6. Create a WebApp part of the create App Service Plan
+
+```az webapp create --name <name> --resource-group <rsg name> --plan <asp name>```
+
 ## Link app service to this repository
 
 
