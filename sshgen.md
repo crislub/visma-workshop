@@ -23,7 +23,7 @@ ssh-keyge -t rsa -b 4096 -C "your_email@example.com"
 4. In the user settings sidebar, click SSH and GPG keys.
 
 <p align="center">
-    <image src="image/ssh-keys.png" width="50%" height="50%"/>
+    <image src="image/ssh-keys.png" width="20%" height="20%"/>
 </p>
 
 5. Click New SSH key.
