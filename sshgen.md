@@ -48,5 +48,5 @@ ssh-keyge -t rsa -b 4096 -C "your_email@example.com"
 9. Press "Autorize" botom to allow you work with visma-raet organization.
 
 <p align="center">
-    <image src="image/ssh-sso-visma.png" width="30%" height="30%"/>
+    <image src="image/ssh-sso-visma.png" width="40%" height="40%"/>
 </p>
