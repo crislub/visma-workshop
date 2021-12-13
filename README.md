@@ -100,9 +100,9 @@ $ rm -rf old-repository
 
 4. You already have the app service created
 
-` diff
-- Note: You can do all the steps trough code
-`
+``` diff
+- Note: You can also do all the steps to create new app service through code. We are not provide the code, you should do it by your own. 
+```
 ## Link app service to this repository
 
 
