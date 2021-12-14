@@ -6,7 +6,7 @@ param ADMIN_NAME string
 @secure()
 param ADMIN_PASSWORD string
 
-var sqlServerName = 'sqlserverPocLuis'
+var sqlServerName = 'sqlserverworkshopcris'
 var minTlsVersion = '1.2'
 
 var databaseName = 'sample-db'
