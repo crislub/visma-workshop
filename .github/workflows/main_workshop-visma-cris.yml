@@ -55,3 +55,30 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4001E2D58C344D7FAC33E8475695B01D }}
           package: .
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+      # Checkout code
+    - uses: actions/checkout@main
+
+      # Log into Azure
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      # Deploy Bicep file
+    - name: deploy
+      uses: azure/arm-deploy@v1
+      with:
+        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
+        resourceGroupName: ${{ secrets.AZURE_RESOURCEGROUP }}
+        template: ./main.bicep
+        parameters: ADMIN_NAME=${{ secrets.ADMIN_NAME }} ADMIN_PASSWORD=${{ secrets.ADMIN_PASSWORD }}
+        failOnStdErr: false
+
+    # Azure logout 
+    - name: logout
+      run: |
+        az logout
